@@ -27,10 +27,11 @@ export interface QuestionQuestion extends Schema.Component {
   collectionName: 'components_question_questions';
   info: {
     displayName: 'Question';
+    description: '';
   };
   attributes: {
     Title: Attribute.String;
-    Image: Attribute.Media;
+    Content: Attribute.Blocks;
   };
 }
 
