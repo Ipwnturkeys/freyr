@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_products",
+  "info": {
+    "displayName": "Product"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

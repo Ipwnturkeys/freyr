@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formpages",
+  "info": {
+    "singularName": "formpage",
+    "pluralName": "formpages",
+    "displayName": "Formpage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Headline": {
+      "type": "string"
+    },
+    "LeftContentText": {
+      "type": "blocks"
+    },
+    "FormHeader": {
+      "type": "string"
+    },
+    "FormBottomContent": {
+      "type": "string"
+    },
+    "FormBackground": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "MainLogo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ContentCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "card.card"
+    },
+    "ContentCard2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "card.card"
+    },
+    "ContentCard3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "card.card"
+    },
+    "Question": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question"
+    }
+  }
+}

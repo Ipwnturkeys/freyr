@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "homepages",
+  "collectionName": "experiences",
   "info": {
-    "singularName": "homepage",
-    "pluralName": "homepages",
-    "displayName": "Homepage",
-    "description": ""
+    "singularName": "experience",
+    "pluralName": "experiences",
+    "displayName": "Experience"
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +14,13 @@
     "Title": {
       "type": "string"
     },
-    "Content": {
+    "Subtitle": {
+      "type": "string"
+    },
+    "Questions": {
       "type": "blocks"
     },
     "Logo": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "ExtraImage": {
       "allowedTypes": [
         "images"
       ],

@@ -1,22 +1,22 @@
 {
   "kind": "collectionType",
-  "collectionName": "homepages",
+  "collectionName": "highratingpages",
   "info": {
-    "singularName": "homepage",
-    "pluralName": "homepages",
-    "displayName": "Homepage",
-    "description": ""
+    "singularName": "highratingpage",
+    "pluralName": "highratingpages",
+    "displayName": "Highratingpage"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
-    "Content": {
-      "type": "blocks"
+    "amazon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     },
     "Logo": {
       "allowedTypes": [
@@ -25,12 +25,10 @@
       "type": "media",
       "multiple": false
     },
-    "ExtraImage": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "Product": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.product"
     }
   }
 }
